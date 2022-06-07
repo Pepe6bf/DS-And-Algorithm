@@ -1,6 +1,7 @@
 package programmers.list;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class list_1 {
     public static void main(String[] args) {
@@ -13,7 +14,9 @@ public class list_1 {
     }
 }
 
-// 첫 번째 시도 : 일단 답 나오도록 풀이
+/**
+ * 첫 번째 시도 : 일단 답 나오도록 풀이
+ */
 class Solution1 {
     public int[] solution(int[] arr) {
         int max = -1;
@@ -42,5 +45,17 @@ class Solution1 {
         }
 
         return answer;
+    }
+}
+
+/**
+ * 두 번째 시도 : 람다/스트림 활용
+ */
+class Solution2 {
+    public int[] solution(int[] arr) {
+        int max = Arrays.stream(arr).max().getAsInt();
+        return IntStream.range(0, arr.length)
+                .filter(i -> arr[i] == max)
+                .toArray();
     }
 }
