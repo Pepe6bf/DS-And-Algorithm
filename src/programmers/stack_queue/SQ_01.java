@@ -20,4 +20,20 @@ public class SQ_01 {
 
         return stack.size() == 0;
     }
+
+    /**
+     * 또다른 풀이
+     */
+    private static boolean solution2(String s) {
+        // depth를 이용
+        int stack = 0;
+        for (char c : s.toCharArray()) {
+            if (c == '(') stack++;
+            else {
+                if (stack == 0) return false;
+                stack--;
+            }
+        }
+        return stack == 0;
+    }
 }
