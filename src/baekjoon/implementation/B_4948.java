@@ -52,8 +52,8 @@ public class B_4948 {
     // 소수의 개수를 얻는 메소드
     public static void get_count() {
         int count = 0;
-        for(int i = 2; i < prime.length; i++) {
-            if(!prime[i]) count++;	// 소수일 경우 count를 증가시킨다
+        for (int i = 2; i < prime.length; i++) {
+            if (!prime[i]) count++;    // 소수일 경우 count를 증가시킨다
 
 			/*
 			0 ~ i 까지 소수의 개수 = count
@@ -61,4 +61,5 @@ public class B_4948 {
 			*/
             count_arr[i] = count;
         }
+    }
 }
