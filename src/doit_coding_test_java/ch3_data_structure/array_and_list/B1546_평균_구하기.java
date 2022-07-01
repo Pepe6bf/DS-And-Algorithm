@@ -2,7 +2,7 @@ package doit_coding_test_java.ch3_data_structure.array_and_list;
 
 import java.util.*;
 
-public class P1546_평균_구하기 {
+public class B1546_평균_구하기 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
