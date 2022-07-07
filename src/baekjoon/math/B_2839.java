@@ -1,4 +1,4 @@
-package baekjoon.implementation;
+package baekjoon.math;
 
 import java.io.InputStreamReader;
 import java.io.BufferedReader;

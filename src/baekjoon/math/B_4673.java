@@ -1,4 +1,4 @@
-package baekjoon.implementation;
+package baekjoon.math;
 
 public class B_4673 {
 

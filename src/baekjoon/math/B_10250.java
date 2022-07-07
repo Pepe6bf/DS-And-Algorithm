@@ -1,4 +1,4 @@
-package baekjoon.implementation;
+package baekjoon.math;
 
 import java.util.StringTokenizer;
 import java.io.IOException;
