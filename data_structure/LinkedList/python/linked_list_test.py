@@ -1,4 +1,4 @@
-from LinkedList import Node, LinkedList
+from linked_list import Node, LinkedList
 
 node1 = Node(1)
 node2 = Node(2)
