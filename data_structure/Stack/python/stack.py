@@ -1,4 +1,8 @@
-from linked_list import LinkedList
+import sys, os
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+
+from linked_list import linked_list
+LinkedList = linked_list.LinkedList
 
 class Stack:
     list = []
