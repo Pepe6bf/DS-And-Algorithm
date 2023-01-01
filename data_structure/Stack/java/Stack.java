@@ -1,7 +1,7 @@
 package data_structure.stack;
 
-import data_structure.linked_list.LinkedList;
-import data_structure.linked_list.Node;
+import data_structure.linked_list.singly_linked_list.LinkedList;
+import data_structure.linked_list.singly_linked_list.Node;
 
 public class Stack<T> {
     private LinkedList<T> list;

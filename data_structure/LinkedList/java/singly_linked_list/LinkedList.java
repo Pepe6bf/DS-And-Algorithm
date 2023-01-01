@@ -1,8 +1,9 @@
-package data_structure.linked_list;
+package data_structure.linked_list.singly_linked_list;
+
 
 public class LinkedList <T> {
     Node<T> head;
-    int count;
+    private int count;
 
     public LinkedList() {
         this.head = null;
@@ -119,5 +120,13 @@ public class LinkedList <T> {
      */
     public Node<T> deleteLast() {
         return deleteAt(count - 1);
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

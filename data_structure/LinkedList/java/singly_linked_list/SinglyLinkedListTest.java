@@ -1,10 +1,12 @@
-package data_structure.linked_list;
+package data_structure.linked_list.singly_linked_list;
 
-public class Main {
+import data_structure.linked_list.singly_linked_list.LinkedList;
+
+public class SinglyLinkedListTest {
     public static void main(String[] args) {
-        Node<Integer> node1 = new Node<>(1);
-        Node<Integer> node2 = new Node<>(2);
-        Node<Integer> node3 = new Node<>(3);
+        data_structure.linked_list.singly_linked_list.Node<Integer> node1 = new data_structure.linked_list.singly_linked_list.Node<>(1);
+        data_structure.linked_list.singly_linked_list.Node<Integer> node2 = new data_structure.linked_list.singly_linked_list.Node<>(2);
+        data_structure.linked_list.singly_linked_list.Node<Integer> node3 = new data_structure.linked_list.singly_linked_list.Node<>(3);
 
         node1.setNext(node2);
         node2.setNext(node3);
@@ -53,7 +55,7 @@ public class Main {
         list.insertAt(3, 4);
         list.insertAt(4, 5);
 
-        Node<Integer> second = list.getNodeAt(2);
+        data_structure.linked_list.singly_linked_list.Node<Integer> second = list.getNodeAt(2);
         System.out.println(second);
         System.out.println(second.getData());
     }

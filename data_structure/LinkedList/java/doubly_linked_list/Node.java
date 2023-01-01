@@ -1,8 +1,9 @@
-package data_structure.linked_list;
+package data_structure.linked_list.doubly_linked_list;
 
-public class Node <T> {
+public class Node<T> {
     private T data;
     private Node<T> next;
+    private Node<T> prev;
 
     public Node(T data) {
         this(data, null);
@@ -29,4 +30,11 @@ public class Node <T> {
         this.next = next;
     }
 
+    public Node<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node<T> prev) {
+        this.prev = prev;
+    }
 }
