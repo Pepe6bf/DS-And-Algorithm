@@ -16,7 +16,7 @@ class DoublyLinkedList:
         text = "["
 
         for i in range(self.count):
-            text += current_node.data
+            text += str(current_node.data)
             current_node = current_node.next
 
             if i is not self.count - 1:
