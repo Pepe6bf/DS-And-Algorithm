@@ -1,11 +1,11 @@
 package data_structure.linked_list.singly_linked_list;
 
 
-public class LinkedList <T> {
+public class SinglyLinkedList<T> {
     Node<T> head;
     private int count;
 
-    public LinkedList() {
+    public SinglyLinkedList() {
         this.head = null;
         this.count = 0;
     }
