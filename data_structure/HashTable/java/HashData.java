@@ -8,4 +8,12 @@ public class HashData <T> {
         this.key = key;
         this.value = value;
     }
+
+    public int getKey() {
+        return key;
+    }
+
+    public T getValue() {
+        return value;
+    }
 }

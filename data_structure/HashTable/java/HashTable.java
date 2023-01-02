@@ -8,7 +8,7 @@ import java.util.List;
 
 public class HashTable <T> {
 
-    List<DoublyLinkedList<HashData>> arr = new ArrayList<>();
+    List<DoublyLinkedList<HashData<T>>> arr = new ArrayList<>();
 
     public HashTable() {
         for (int i = 0; i < 10; i++) {
@@ -36,8 +36,8 @@ public class HashTable <T> {
         return null;
     }
 
-    public Node<HashData> remove(int key) {
-        DoublyLinkedList<HashData> list = arr.get(hashFunction(key));
+    public Node<HashData<T>> remove(int key) {
+        DoublyLinkedList<HashData<T>> list = arr.get(hashFunction(key));
         Node<HashData<T>> currentNode = list.getHead();
         int deletedIndex = 0;
         while (currentNode != null) {
@@ -48,5 +48,9 @@ public class HashTable <T> {
             deletedIndex++;
         }
         return null;
+    }
+
+    public List<DoublyLinkedList<HashData<T>>> getArr() {
+        return arr;
     }
 }
