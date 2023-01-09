@@ -1,5 +1,38 @@
 import java.util.*;
 
+[ 직접 생각한 코드 ]
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int max = Integer.MIN_VALUE;
+        int[] grades = new int[N];
+        double result = 0;
+
+        for (int i = 0; i < N; i++) {
+            int input = sc.nextInt();
+            if (input > max) {
+                max = input;
+            }
+            grades[i] = input;
+        }
+
+        // 모든 원본 성적을 합산
+        for (int i = 0; i < N; i++) {
+            result += grades[i];
+        }
+        result = (result / max * 100.0) / N;
+
+        System.out.println(result);
+    }
+}
+
+===============================================================
+
+[ 서적 예제 코드 ]
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
