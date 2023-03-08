@@ -1,3 +1,2 @@
 coding-test/z_free/
-coding-test/BaekJoon/*.class
-coding-test/Programmers/*.class
+coding-test/**/*.class
